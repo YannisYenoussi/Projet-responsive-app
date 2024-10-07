@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+  <title>CoreUI Free Bootstrap Admin Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Vendors styles-->
+  <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+  <link rel="stylesheet" href="css/vendors/simplebar.css">
+  <!-- Main styles for this application-->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- We use those styles to show code examples, you should remove them in your application.-->
+  <link href="css/examples.css" rel="stylesheet">
+  <script src="js/config.js"></script>
+  <script src="js/color-modes.js"></script>
+  <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
+  
+</head>
+
+<body>
+  <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
+    <div class="sidebar-header border-bottom">
+      <div class="sidebar-brand">
+        <img src="../assets/img/TPNT-removebg-preview.png" alt="logo tpmt" width="200" height="200">
+      </div>
+      <button class="btn-close d-lg-none" type="button" data-coreui-dismiss="offcanvas" data-coreui-theme="dark"
+        aria-label="Close"
+        onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()"></button>
+    </div>
+    <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+      <li class="nav-item"><a class="nav-link" href="home.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-newspaper"></use>
+          </svg> Actualités</a></li>
+      <li class="nav-title">Base de données</li>
+      <li class="nav-item"><a class="nav-link" href="Base-Clients.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-group"></use>
+          </svg> Base Clients</a></li>
+      <li class="nav-item"><a class="nav-link" href="Base-Anonces.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+          </svg> Base Annonces</a></li>
+      <li class="nav-title">Mon Compte</li>
+      <li class="nav-item"><a class="nav-link" href="Mes ventes.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-group"></use>
+          </svg> Mes Ventes</a></li>
+      <li class="nav-item"><a class="nav-link" href="Chat-et-appel.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+          </svg> Chats et Appels</a></li>
+      <li class="nav-item"><a class="nav-link" href="Contact.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+          </svg> Centre de Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="Analytique.html">
+          <svg class="nav-icon">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+          </svg> Analytique</a></li>
+    </ul>
+    <div class="sidebar-footer border-top d-none d-md-flex">
+      <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+    </div>
+  </div>
+
+  
+
+  <div class="wrapper d-flex flex-column min-vh-100">
+    <header class="header header-sticky p-0 mb-4">
+      <div class="container-fluid border-bottom px-4">
+        <button class="header-toggler" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()" style="margin-inline-start: -14px;">
+          <svg class="icon icon-lg">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+          </svg>
+        </button>
+        <div>
+          <img src="../assets/img/TPNT-removebg-preview.png"alt="logo" weight= 150 height=150>
+        </div>
+        <ul class="header-nav d-none d-lg-flex">
+
+        </ul>
+        <ul class="header-nav">
+          <li class="nav-item py-1">
+            <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-link nav-link py-2 px-2 d-flex align-items-center" type="button"
+              aria-expanded="false" data-coreui-toggle="dropdown">
+              <svg class="icon icon-lg theme-icon-active">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+              </svg>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" style="--cui-dropdown-min-width: 8rem;">
+              <li>
+                <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="light">
+                  <svg class="icon icon-lg me-3">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-sun"></use>
+                  </svg>Light
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="dark">
+                  <svg class="icon icon-lg me-3">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                  </svg>Dark
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item d-flex align-items-center active" type="button"
+                  data-coreui-theme-value="auto">
+                  <svg class="icon icon-lg me-3">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                  </svg>Auto
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item py-1">
+            <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link py-0 pe-0" data-coreui-toggle="dropdown" href="#"
+              role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com">
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end pt-0">
+              <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold rounded-top mb-2">Mon Compte
+              </div><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+                </svg> Notifications<span class="badge badge-sm bg-success ms-2">10</span></a><a class="dropdown-item"
+                href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
+                </svg> Chat et Appels<span class="badge badge-sm bg-danger ms-2">42</span></a><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
+                </svg> Calendrier<span class="badge badge-sm bg-warning ms-2">42</span></a>
+              <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold my-2">
+                <div class="fw-semibold">Settings</div>
+              </div><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+                </svg> Profil</a><a class="dropdown-item" href="#">
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+                </svg> Se Déconnecter</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="container-fluid px-4">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb my-0">
+            <li class="breadcrumb-item"><a href="home.html">Actualités</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+
+
+
+    <div class="body flex-grow-1">
+      <div class="container-lg px-4">
+    
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <div class="card">
+              <h2>A la Une</h2>
+            <a href="link_to_full_article_1.html" class="text-decoration-none">
+  
+            <!-- Carrousel -->
+            <div id="carouselExample" class="carousel slide mb-2" data-bs-ride="carousel">
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Article1-1.jpg" class="d-block w-100" alt="Partage d'experience 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="Article1-2.jpg" class="d-block w-100" alt="Partage d'experience 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="Article1-3.jpg" class="d-block w-100" alt="Partage d'experience 3">
+                </div>
+              </div>
+             
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+              </button>
+
+            </div>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Les dernières tendances du marché immobilier pour mieux conseiller vos clients</h5>
+              <p class="card-text">Découvrez les nouvelles tendances pour maximiser vos conseils clients...</p>          
+            </div>
+
+          </div>
+        </div>
+    
+    <br>
+    <br>
+    <br>
+  
+
+    <div class="body flex-grow-1">
+      <div class="container-lg px-4">
+    
+        <div class="row mb-4">
+          <div class="col-md-12">
+            <div class="card">
+            <a href="link_to_full_article_1.html" class="text-decoration-none">
+  
+            <!-- Carrousel -->
+            <div id="carouselExample" class="carousel slide mb-2" data-bs-ride="carousel">
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="Article2-1.png" class="d-block w-100" alt="Partage d'experience 1">
+                </div>
+                <div class="carousel-item">
+                  <img src="Article2-2.png" class="d-block w-100" alt="Partage d'experience 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="Article2-3.png" class="d-block w-100" alt="Partage d'experience 3">
+                </div>
+              </div>
+             
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+              </button>
+
+            </div>
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Partage d'expérience : Comment réussir une vente lors d'une première visite</h5>
+              <p class="card-text">L'un de nos meilleurs commerciaux partage ses astuces pour conclure une vente dès la première visite. De la préparation à la négociation, découvrez ses conseils pour augmenter vos chances de succès lors de vos prochaines visites...</p>          
+            </div>
+
+          </div>
+        </div>
+
+
+      <br>
+      <br>
+      <br>
+
+
+      <div class="container my-4">
+        <h2 class="mb-4">Autres Articles</h2>
+      
+        <div class="row">
+          <div class="col-md-6 d-flex mb-4">
+            <div class="row align-items-center">
+              <div class="col-8 col-md-12">
+                <h5 class="article-title">Formation interne : Maîtrisez les nouvelles fonctionnalités de l'application</h5>
+                <p class="article-text">Une formation est prévue la semaine prochaine pour découvrir en détail les nouvelles fonctionnalités de notre application...</p>
+              </div>
+              <div class="col-4 col-md-12">
+                <img src="Article3.png" class="img-fluid" alt="Formation interne">
+              </div>
+            </div>
+          </div>
+      
+          
+          <div class="col-md-6 d-flex mb-4">
+            <div class="row align-items-center">
+              <div class="col-8 col-md-12">
+                <h5 class="article-title">Visites virtuelles : Comment ça marche ?</h5>
+                <p class="article-text">Les visites virtuelles permettent aux acheteurs potentiels de visiter un bien sans se déplacer. Découvrez comment ça marche...</p>
+              </div>
+              <div class="col-4 col-md-12">
+                <img src="Article4.png" class="img-fluid" alt="Visites virtuelles">
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-6 d-flex mb-4">
+            <div class="row align-items-center">
+              <div class="col-8 col-md-12">
+                <h5 class="article-title">Zoom sur la loi Pinel : Comment profiter des avantages fiscaux ?</h5>
+                <p class="article-text">La loi Pinel offre des avantages fiscaux aux investisseurs dans l’immobilier neuf. Comment en profiter ?</p>
+              </div>
+              <div class="col-4 col-md-12">
+                <img src="Article5.jpg" class="img-fluid" alt="Loi Pinel">
+              </div>
+            </div>
+          </div>
+      
+          
+          <div class="col-md-6 d-flex mb-4">
+            <div class="row align-items-center">
+              <div class="col-8 col-md-12">
+                <h5 class="article-title">Retour sur l'événement de l'agence : Un bilan des performances trimestrielles
+                </h5>
+                <p class="article-text">Lors de notre dernière réunion d’équipe, nous avons discuté des performances de l’agence pour ce trimestre. Découvrez le récapitulatif des ventes, des nouvelles opportunités de marché et des axes d’amélioration proposés par la direction pour le trimestre à venir.
+                </p>
+              </div>
+              <div class="col-4 col-md-12">
+                <img src="Article6.jpg" class="img-fluid" alt="Evènement">
+              </div>
+            </div>
+          </div>
+      
+         
+          <div class="col-md-6 d-flex mb-4">
+            <div class="row align-items-center">
+              <div class="col-8 col-md-12">
+                <h5 class="article-title">Nouveau partenariat : Collaboration avec un cabinet de notaires</h5>
+                <p class="article-text">Nous avons établi un partenariat avec un cabinet de notaires local pour simplifier les démarches administratives liées aux ventes. Ce partenariat vous permettra de proposer à vos clients un service plus rapide et efficace lors de la signature des actes de vente.
+                </p>
+              </div>
+              <div class="col-4 col-md-12">
+                <img src="Article7.png" class="img-fluid" alt="partenariat">
+              </div>
+            </div>
+          </div>
+
+           <!-- Article 6 -->
+           <div class="col-md-6 d-flex mb-4">
+            <div class="row align-items-center">
+              <div class="col-8 col-md-12">
+                <h5 class="article-title">Focus sur les ventes : Suivi de vos performances mensuelles</h5>
+                <p class="article-text">L'analytique de l’application vous permet désormais de suivre vos performances de ventes en temps réel. Consultez vos chiffres, comparez-les aux objectifs fixés et suivez l’évolution de vos dossiers. Cette nouvelle section vous aidera à rester motivé et à cibler les actions prioritaires…
+                </p>
+              </div>
+              <div class="col-4 col-md-12">
+                <img src="Article8.jpg" class="img-fluid" alt="Analytique">
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+      
+      <div class="container mt-4">
+        <h2>Questions fréquentes pour les vendeurs immobiliers</h2>
+        <div class="accordion" id="accordionSellerQuestions">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Comment estimer la valeur de mon bien immobilier ?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionSellerQuestions">
+                    <div class="accordion-body">
+                        <strong>Réponse :</strong> Pour estimer la valeur de votre bien, vous pouvez faire appel à un agent immobilier qui évaluera l'état, la localisation, et le marché actuel. Il est aussi possible d'utiliser des outils en ligne pour une estimation préliminaire.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Quels sont les frais lors de la vente d'un bien immobilier ?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSellerQuestions">
+                    <div class="accordion-body">
+                        <strong>Réponse :</strong> Les frais incluent les frais d'agence si vous avez recours à un agent, les frais de diagnostics obligatoires, et les impôts éventuels sur la plus-value si vous vendez un bien non-résidence principale.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Comment se préparer à la visite d'un potentiel acheteur ?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionSellerQuestions">
+                    <div class="accordion-body">
+                        <strong>Réponse :</strong> Avant une visite, assurez-vous que le bien soit propre et en bon état. Il est recommandé de dépersonnaliser les pièces pour que l'acheteur puisse s'imaginer dans l'espace. Préparez également les documents importants comme les diagnostics.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Quels sont les diagnostics obligatoires pour la vente d'un bien ?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionSellerQuestions">
+                    <div class="accordion-body">
+                        <strong>Réponse :</strong> Les diagnostics incluent le diagnostic de performance énergétique (DPE), l'amiante, le plomb (pour les biens construits avant 1949), les termites, et le gaz/électricité selon l'âge des installations.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Combien de temps prend la vente d'un bien immobilier ?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionSellerQuestions">
+                    <div class="accordion-body">
+                        <strong>Réponse :</strong> Le délai de vente dépend de plusieurs facteurs comme la localisation, le prix, et la demande. En général, il faut compter entre 3 et 6 mois entre la mise en vente et la signature de l'acte définitif.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      
+      
+
+
+    <footer class="footer px-4">
+      <div>
+        <a href="">Copyright Notice</a>
+        <a href="">Contact Information</a>
+        <a href="">Privacy Policy Link</a> &copy; 2024
+        SN2 Projet Responsive.</div>
+    </footer>
+  </div>
+  <!-- CoreUI and necessary plugins-->
+  <script src="node_modules/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+  <script src="node_modules/simplebar/dist/simplebar.min.js"></script>
+  <script>
+    const header = document.querySelector('header.header');
+
+    document.addEventListener('scroll', () => {
+      if (header) {
+        header.classList.toggle('shadow-sm', document.documentElement.scrollTop > 0);
+      }
+    });
+
+  </script>
+  <!-- Plugins and scripts required by this view-->
+  <script src="node_modules/chart.js/dist/chart.umd.js"></script>
+  <script src="node_modules/@coreui/chartjs/dist/js/coreui-chartjs.js"></script>
+  <script src="node_modules/@coreui/utils/dist/umd/index.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+

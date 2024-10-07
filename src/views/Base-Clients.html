@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+    <title>Base Clients</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-c1I3K5Pq2owH2S2VxMj6X5AoTSpKJzgnMAUwlMniYUEvbz5KN6s53p8xz74ry1tQKaQy4T1A7KhJX8TO1EqH6w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendors styles-->
+    <link rel="stylesheet" href="node_modules/simplebar/dist/simplebar.css">
+    <link rel="stylesheet" href="css/vendors/simplebar.css">
+    <!-- Main styles for this application-->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- We use those styles to show code examples, you should remove them in your application.-->
+    <link href="css/examples.css" rel="stylesheet">
+    <script src="js/config.js"></script>
+    <script src="js/color-modes.js"></script>
+    <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar sidebar-dark sidebar-fixed border-end" id="sidebar">
+        <div class="sidebar-header border-bottom">
+          <div class="sidebar-brand">
+            <img src="../assets/img/TPNT-removebg-preview.png" alt="logo tpmt" width="200" height="200">
+          </div>
+          <button class="btn-close d-lg-none" type="button" data-coreui-dismiss="offcanvas" data-coreui-theme="dark"
+            aria-label="Close"
+            onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()"></button>
+        </div>
+        <ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+          <li class="nav-item"><a class="nav-link" href="home.html">
+              <svg class="nav-icon">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-newspaper"></use>
+              </svg> Actualités</a></li>
+          <li class="nav-title">Base de données</li>
+          <li class="nav-item"><a class="nav-link" href="Base-Clients.html">
+              <svg class="nav-icon">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-group"></use>
+              </svg> Base Clients</a></li>
+          <li class="nav-item"><a class="nav-link" href="Base-Anonces.html">
+              <svg class="nav-icon">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+              </svg> Base Annonces</a></li>
+          <li class="nav-title">Mon Compte</li>
+          <li class="nav-item"><a class="nav-link" href="Mes ventes.html">
+              <svg class="nav-icon">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-group"></use>
+              </svg> Mes Ventes</a></li>
+          <li class="nav-item"><a class="nav-link" href="Chat-et-appel.html">
+              <svg class="nav-icon">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+              </svg> Chats et Appels</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.html">
+              <svg class="nav-icon">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+              </svg> Centre de Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="Analytique.html">
+              <svg class="nav-icon">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-library"></use>
+              </svg> Analytique</a></li>
+        </ul>
+        <div class="sidebar-footer border-top d-none d-md-flex">
+          <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>
+        </div>
+      </div>
+
+  <div class="wrapper d-flex flex-column min-vh-100">
+    <header class="header header-sticky p-0 mb-4">
+      <div class="container-fluid border-bottom px-4">
+        <button class="header-toggler" type="button" onclick="coreui.Sidebar.getInstance(document.querySelector('#sidebar')).toggle()" style="margin-inline-start: -14px;">
+          <svg class="icon icon-lg">
+            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-menu"></use>
+          </svg>
+        </button>
+        <div>
+          <img src="../assets/img/TPNT-removebg-preview.png"alt="logo" weight= 150 height=150>
+        </div>
+        <ul class="header-nav d-none d-lg-flex">
+
+        </ul>
+        <ul class="header-nav">
+          <li class="nav-item py-1">
+            <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+          </li>
+          <li class="nav-item dropdown">
+            <button class="btn btn-link nav-link py-2 px-2 d-flex align-items-center" type="button"
+              aria-expanded="false" data-coreui-toggle="dropdown">
+              <svg class="icon icon-lg theme-icon-active">
+                <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+              </svg>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" style="--cui-dropdown-min-width: 8rem;">
+              <li>
+                <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="light">
+                  <svg class="icon icon-lg me-3">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-sun"></use>
+                  </svg>Light
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item d-flex align-items-center" type="button" data-coreui-theme-value="dark">
+                  <svg class="icon icon-lg me-3">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-moon"></use>
+                  </svg>Dark
+                </button>
+              </li>
+              <li>
+                <button class="dropdown-item d-flex align-items-center active" type="button"
+                  data-coreui-theme-value="auto">
+                  <svg class="icon icon-lg me-3">
+                    <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-contrast"></use>
+                  </svg>Auto
+                </button>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item py-1">
+            <div class="vr h-100 mx-2 text-body text-opacity-75"></div>
+          </li>
+          <li class="nav-item dropdown"><a class="nav-link py-0 pe-0" data-coreui-toggle="dropdown" href="#"
+              role="button" aria-haspopup="true" aria-expanded="false">
+              <div class="avatar avatar-md"><img class="avatar-img" src="assets/img/avatars/8.jpg" alt="user@email.com">
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end pt-0">
+              <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold rounded-top mb-2">Mon Compte
+              </div><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-envelope-open"></use>
+                </svg> Notifications<span class="badge badge-sm bg-success ms-2">10</span></a><a class="dropdown-item"
+                href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-task"></use>
+                </svg> Chat et Appels<span class="badge badge-sm bg-danger ms-2">42</span></a><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-comment-square"></use>
+                </svg> Calendrier<span class="badge badge-sm bg-warning ms-2">42</span></a>
+              <div class="dropdown-header bg-body-tertiary text-body-secondary fw-semibold my-2">
+                <div class="fw-semibold">Settings</div>
+              </div><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-user"></use>
+                </svg> Profil</a><a class="dropdown-item" href="#">
+              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">
+                <svg class="icon me-2">
+                  <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-account-logout"></use>
+                </svg> Se Déconnecter</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="container-fluid px-4">
+        <!-- Fil d'Ariane -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="home.html">Actualités</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Base de Clients</li>
+            </ol>
+        </nav>
+
+      </div>
+    </header>
+
+
+
+        <!-- Main content -->
+        <div class="body flex-grow-1">
+            <div class="container-lg px-4">
+                
+                <h2 class="my-4">Base de Clients</h2>
+    
+                <!-- Formulaire d'ajout de client -->
+                <form id="add-client-form" class="mb-4">
+                    <div class="row g-3">
+                        <div class="col-md-2">
+                            <input type="text" id="new-nom" class="form-control" placeholder="Nom" required>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" id="new-prenom" class="form-control" placeholder="Prénom" required>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="email" id="new-email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="tel" id="new-tel" class="form-control" placeholder="Téléphone" required>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" id="new-adresse" class="form-control" placeholder="Adresse" required>
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="button" class="btn btn-success" onclick="addClient()">Ajouter Client</button>
+                        </div>
+                    </div>
+                </form>
+    
+                <!-- Formulaire de recherche avec filtres -->
+                <form id="search-form" class="mb-4">
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <input type="text" id="filter-nom" class="form-control" placeholder="Nom">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" id="filter-prenom" class="form-control" placeholder="Prénom">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" id="filter-email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-12 text-end">
+                            <button type="button" class="btn btn-primary" onclick="filterClients()">Rechercher</button>
+                        </div>
+                    </div>
+                </form>
+    
+                <!-- Tableau des clients -->
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nom</th>
+                                <th scope="col">Prénom</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Téléphone</th>
+                                <th scope="col">Adresse</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="clients-table-body">
+                            <!-- Liste des clients (initialement toutes les annonces) -->
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Dupont</td>
+                                <td>Jean</td>
+                                <td>jean.dupont@example.com</td>
+                                <td>0123456789</td>
+                                <td>123 Rue Principale, Paris</td>
+                                <td>
+                                    <button class="btn btn-primary">Voir Détails</button>
+                                    <button class="btn btn-danger" onclick="deleteClient(1)"><i class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Martin</td>
+                                <td>Claire</td>
+                                <td>claire.martin@example.com</td>
+                                <td>0987654321</td>
+                                <td>45 Rue des Fleurs, Lyon</td>
+                                <td>
+                                    <button class="btn btn-primary">Voir Détails</button>
+                                    <button class="btn btn-danger" onclick="deleteClient(2)"><i class="fa-solid fa-trash"></i></button>
+                                </td>
+                            </tr>
+                            <!-- Ajouter d'autres clients ici -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            // Exemple de données clients (pour tester les filtres)
+            const clients = [
+                { id: 1, nom: 'Dupont', prenom: 'Jean', email: 'jean.dupont@example.com', tel: '0123456789', adresse: '123 Rue Principale, Paris' },
+                { id: 2, nom: 'Martin', prenom: 'Claire', email: 'claire.martin@example.com', tel: '0987654321', adresse: '45 Rue des Fleurs, Lyon' }
+            ];
+    
+            // Fonction pour ajouter un client
+            function addClient() {
+                const nom = document.getElementById('new-nom').value;
+                const prenom = document.getElementById('new-prenom').value;
+                const email = document.getElementById('new-email').value;
+                const tel = document.getElementById('new-tel').value;
+                const adresse = document.getElementById('new-adresse').value;
+    
+                const newClient = {
+                    id: clients.length + 1, // Incrementer l'ID
+                    nom: nom,
+                    prenom: prenom,
+                    email: email,
+                    tel: tel,
+                    adresse: adresse
+                };
+    
+                clients.push(newClient); // Ajouter le nouveau client à la liste
+                renderClientsTable(clients); // Mettre à jour le tableau
+                clearAddForm(); // Effacer le formulaire d'ajout
+            }
+    
+            // Fonction pour effacer le formulaire d'ajout
+            function clearAddForm() {
+                document.getElementById('new-nom').value = '';
+                document.getElementById('new-prenom').value = '';
+                document.getElementById('new-email').value = '';
+                document.getElementById('new-tel').value = '';
+                document.getElementById('new-adresse').value = '';
+            }
+    
+            // Fonction de filtrage des clients
+            function filterClients() {
+                const nom = document.getElementById('filter-nom').value.toLowerCase();
+                const prenom = document.getElementById('filter-prenom').value.toLowerCase();
+                const email = document.getElementById('filter-email').value.toLowerCase();
+    
+                const filteredClients = clients.filter(client => {
+                    return (
+                        (!nom || client.nom.toLowerCase().includes(nom)) &&
+                        (!prenom || client.prenom.toLowerCase().includes(prenom)) &&
+                        (!email || client.email.toLowerCase().includes(email))
+                    );
+                });
+    
+                renderClientsTable(filteredClients);
+            }
+    
+            // Fonction pour afficher les clients dans le tableau
+            function renderClientsTable(clients) {
+                const tbody = document.getElementById('clients-table-body');
+                tbody.innerHTML = ''; // Vider le tableau avant de remplir
+    
+                clients.forEach(client => {
+                    const row = `
+                        <tr>
+                            <th scope="row">${client.id}</th>
+                            <td>${client.nom}</td>
+                            <td>${client.prenom}</td>
+                            <td>${client.email}</td>
+                            <td>${client.tel}</td>
+                            <td>${client.adresse}</td>
+                            <td>
+                                <button class="btn btn-primary">Voir Détails</button>
+                                <button class="btn btn-danger" onclick="deleteClient(${client.id})"><i class="fa-solid fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    `;
+                    tbody.innerHTML += row;
+                });
+            }
+    
+            // Fonction pour supprimer un client
+            function deleteClient(id) {
+                const index = clients.findIndex(client => client.id === id);
+                if (index !== -1) {
+                    clients.splice(index, 1); // Supprime le client de la liste
+                    renderClientsTable(clients); // Met à jour le tableau
+                }
+            }
+    
+            // Afficher tous les clients par défaut
+            renderClientsTable(clients);
+        </script>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    
+
+    <footer class="footer px-4">
+        <div>
+          <a href="">Copyright Notice</a>
+          <a href="">Contact Information</a>
+          <a href="">Privacy Policy Link</a> &copy; 2024
+          SN2 Projet Responsive.</div>
+      </footer>
+
+  </div>
+
+  <!-- JavaScript CoreUI Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/coreui.bundle.min.js"></script>
+</body>
+
+</html>
